@@ -1,5 +1,7 @@
 local severity = vim.diagnostic.severity
 
+vim.lsp.enable("dexter")
+
 vim.diagnostic.config({
 	severity_sort = true,
 	underline = { severity = severity.WARN },

@@ -6,7 +6,6 @@ return {
 				"cssls",
 				"emmet_ls",
 				"eslint",
-				"expert",
 				"graphql",
 				"html",
 				"lua_ls",
