@@ -4,7 +4,7 @@ return {
 	branch = "main",
 	build = ":TSUpdate",
 	dependencies = {
-		"windwp/nvim-ts-autotag",
+		{ "windwp/nvim-ts-autotag", opts = {} },
 	},
 	config = function()
 		local parsers = {
