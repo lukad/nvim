@@ -5,6 +5,9 @@ return {
 		local conform = require("conform")
 		conform.setup({
 			formatters_by_ft = {
+				elixir = {},
+				eelixir = {},
+				heex = {},
 				javascript = { "prettier" },
 				lua = { "stylua" },
 			},

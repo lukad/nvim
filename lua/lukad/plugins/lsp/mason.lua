@@ -2,6 +2,9 @@ return {
 	{
 		"mason-org/mason-lspconfig.nvim",
 		opts = {
+			automatic_enable = {
+				exclude = { "expert" },
+			},
 			ensure_installed = {
 				"cssls",
 				"emmet_ls",

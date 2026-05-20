@@ -6,8 +6,8 @@ return {
 	dependencies = {
 		{ "windwp/nvim-ts-autotag", opts = {} },
 	},
-	config = function()
-		local parsers = {
+	opts = {
+		parsers = {
 			"asm",
 			"astro",
 			"bash",
@@ -47,9 +47,13 @@ return {
 			"xml",
 			"yaml",
 			"zig",
-		}
+		},
+	},
+	config = function(_, opts)
+		local treesitter = require("nvim-treesitter")
 
-		require("nvim-treesitter").install(parsers)
+		treesitter.setup()
+		treesitter.install(opts.parsers)
 
 		vim.api.nvim_create_autocmd("FileType", {
 			group = vim.api.nvim_create_augroup("lukad-treesitter", { clear = true }),

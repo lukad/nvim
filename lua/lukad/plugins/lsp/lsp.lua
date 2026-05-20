@@ -12,5 +12,16 @@ return {
 		vim.lsp.config("*", {
 			capabilities = capabilities,
 		})
+
+		vim.lsp.config("dexter", {
+			cmd = { "dexter", "lsp" },
+			root_markers = { ".dexter/dexter.db", ".dexter.db", ".git", "mix.exs" },
+			filetypes = { "elixir", "eelixir", "heex" },
+			init_options = {
+				followDelegates = true,
+			},
+		})
+
+		vim.lsp.enable("dexter")
 	end,
 }
