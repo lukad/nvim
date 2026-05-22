@@ -44,6 +44,7 @@ return {
 			"toml",
 			"typescript",
 			"vim",
+			"wgsl",
 			"xml",
 			"yaml",
 			"zig",
