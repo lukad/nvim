@@ -41,4 +41,7 @@ return {
 			map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>", "Gitsigns select hunk")
 		end,
 	},
+	keys = {
+		{ "<leader>gb", "<cmd>Gitsigns blame<cr>", desc = "Git blame" },
+	},
 }
