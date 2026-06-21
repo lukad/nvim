@@ -6,6 +6,7 @@ return {
 				exclude = { "expert" },
 			},
 			ensure_installed = {
+				"clangd",
 				"cssls",
 				"emmet_ls",
 				"eslint",
@@ -39,6 +40,7 @@ return {
 		opts = {
 			ensure_installed = {
 				"black",
+				"clang-format",
 				"eslint_d",
 				"prettier",
 				"pylint",

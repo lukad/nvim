@@ -5,6 +5,7 @@ return {
 		local conform = require("conform")
 		conform.setup({
 			formatters_by_ft = {
+				c = { "clang_format" },
 				elixir = {},
 				eelixir = {},
 				heex = {},
