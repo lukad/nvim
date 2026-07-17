@@ -34,7 +34,7 @@ return {
 		signature = { enabled = true },
 		snippets = { preset = "luasnip" },
 		sources = {
-			default = { "lsp", "path", "snippets", "buffer", "lazydev" },
+			default = { "lsp", "path", "snippets", "buffer", "omni", "lazydev" },
 			providers = {
 				lazydev = {
 					name = "LazyDev",
