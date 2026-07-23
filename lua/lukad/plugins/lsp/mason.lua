@@ -6,6 +6,7 @@ return {
 				exclude = { "expert" },
 			},
 			ensure_installed = {
+				"asm_lsp",
 				"clangd",
 				"cssls",
 				"emmet_ls",
