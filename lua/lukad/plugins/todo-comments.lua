@@ -16,5 +16,5 @@ return {
     end, { desc = "Previous todo comment" })
 
     todo_comments.setup()
-  end
+  end,
 }
